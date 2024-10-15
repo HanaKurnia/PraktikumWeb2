@@ -1,4 +1,6 @@
 # PraktikumWeb2
+## Deskripsi
+Dibuat untuk memenuhi tugas 1 Praktikum Web 2.
 ## Jobsheet 1
 ### Instruksi Kerja
 1. Membuat Class dan Object
@@ -17,29 +19,34 @@ perubahan jurusan.
 - Ubah nilai atribut nim dari objek Mahasiswa menggunakan metode setter.
 - Tampilkan data mahasiswa yang sudah diperbarui dengan memanggil metode
 tampilkanData().
+
 ### Deskripsi
-Script ini merupakan contoh sederhana untuk mengelola data mahasiswa menggunakan OOP (Object-Oriented Programming) dalam PHP. Script ini memungkinkan Anda untuk menampilkan data mahasiswa dan memperbarui informasi jurusan serta NIM mahasiswa.
+Script ini merupakan contoh sederhana untuk mengelola data mahasiswa menggunakan OOP (Object-Oriented Programming) dalam PHP. Script ini menampilkan data mahasiswa dan memperbarui informasi jurusan serta NIM mahasiswa.
 
-#### Fitur
-Instansiasi Objek: Membuat objek mahasiswa dengan atribut nama, nim, dan jurusan.
-Tampilkan Data Mahasiswa: Metode tampilkanData() digunakan untuk menampilkan informasi mahasiswa.
-Update Data Mahasiswa: Metode updateJurusan() digunakan untuk memperbarui jurusan dan NIM mahasiswa.
-Struktur Kode
+### Fitur
+- Instansiasi Objek: Membuat objek mahasiswa dengan atribut nama, nim, dan jurusan.
+  Cara penggunaan : $Mahasiswa1 = new Mahasiswa("Hana", "230202062", "Jurusan Komputer dan Bisnis");
+- Tampilkan Data Mahasiswa: Metode tampilkanData() digunakan untuk menampilkan informasi mahasiswa.
+  Cara penggunaan : echo $Mahasiswa1->tampilkanData();
+- Update Data Mahasiswa: Metode updateJurusan() digunakan untuk memperbarui jurusan dan NIM mahasiswa.
+  Cara penggunaan : $Mahasiswa1->updateJurusan("Jurusan Rekayasa Elektro dan Mekatronika", "230202063");
+- Menampilkan Data Setelah Pembaruan: Setelah melakukan pembaruan, Anda bisa menampilkan data terbaru dengan metode yang sama.
+  Cara penggunaan : echo $Mahasiswa1->tampilkanData();
+
+### Struktur Kode
 Kode terdiri dari kelas Mahasiswa dengan beberapa atribut dan metode:
-
-Atribut:
+- Atribut:
 $nama: Menyimpan nama mahasiswa.
 $nim: Menyimpan NIM mahasiswa.
 $jurusan: Menyimpan jurusan mahasiswa.
-Metode:
-__construct($nama, $nim, $jurusan): Constructor untuk membuat objek mahasiswa dengan atribut yang diberikan.
-tampilkanData(): Menampilkan informasi nama, NIM, dan jurusan mahasiswa.
-updateJurusan($jurusan, $nimBaru): Memperbarui jurusan dan NIM mahasiswa.
+- Metode:
+- __construct($nama, $nim, $jurusan): Constructor untuk membuat objek mahasiswa dengan atribut yang diberikan.
+- tampilkanData(): Menampilkan informasi nama, NIM, dan jurusan mahasiswa.
+- updateJurusan($jurusan, $nimBaru): Memperbarui jurusan dan NIM mahasiswa.
+
 ### Script program dan output
 ![instruksi_js1](https://github.com/user-attachments/assets/6cfa0e1c-454f-44d3-894b-ce9ca3918419)
 ![instruksi_js1](https://github.com/user-attachments/assets/608fa921-9c2a-41ba-ac42-7b3bccb86161)
-
-
 
 ### Tugas 
 1. Implementasikan kelas Dosen dengan atribut nama, nip, dan mataKuliah.
@@ -50,13 +57,25 @@ menampilkan informasi tersebut.
 pembuatan kelas, penggunaan metode, dan hasil output
 Kelas adalah blueprint atau rancangan untuk membuat objek. Kelas menggabungkan properti (atribut) dan metode (fungsi) yang mewakili perilaku dan keadaan dari suatu objek.
 ### Penjelasan pembuatan kelas dan penggunaan metode
-- class Dosen : Mendefinisikan sebuah kelas dengan nama Dosen.
-- Atribut atau properti : $nama, $nip, $mataKuliah adalah variabel yang mewakili karakteristik dari kelas. Pada tugas ini, atribut dideklarasikan sebagai public, artinya atribut tersebut dapat diakses di mana saja, baik di dalam kelas, dari luar kelas, maupun oleh kelas turunan.
-- public function __construct($nama, $nip, $mataKuliah) : ini adalah konstruktor yang digunakan untuk menginisialisasi atribut kelas.
-- $this->nama : Mengakses atribut kelas di dalam metode dengan menggunakan $this, yang merujuk ke objek.
-- public function tampilkanDosen() : ini adalah metode atau fungsi di dalam kelas yang menggambarkan perilaku dari objek yang dibuat dari kelas ini.
-- $Dosen1 = new Dosen("Anto", "12345678", "Matdis") : Membuat objek baru dari kelas Dosen.
-- $Dosen1->tampilkanDosen() : Memanggil metode tampilkanDosen() untuk menampilkan informasi dosen.
+### Deskripsi
+Script ini adalah contoh sederhana yang menggunakan OOP (Object-Oriented Programming) di PHP untuk mengelola data dosen. Script ini dapat menampilkan informasi dosen termasuk nama, NIP, dan mata kuliah yang diajar.
+
+### Fitur
+- Instansiasi Objek: Membuat objek dosen dengan atribut nama, nip, dan matakuliah.
+  Cara penggunaan : $Dosen1 = new Dosen("Anto", "12345678", "Matdis");
+- Tampilkan Data Dosen: Metode tampilkanDosen() digunakan untuk menampilkan data dosen.
+  echo $Dosen1->tampilkanDosen();
+
+
+### Struktur Kode
+Kode ini terdiri dari kelas Dosen yang memiliki atribut dan metode sebagai berikut:
+- Atribut:
+$nama: Menyimpan nama dosen.
+$nip: Menyimpan NIP (Nomor Induk Pegawai) dosen.
+$matakuliah: Menyimpan nama mata kuliah yang diajar dosen.
+- Metode:
+- __construct($nama, $nip, $matakuliah): Constructor untuk menginisialisasi objek dosen dengan atribut nama, nip, dan matakuliah.
+- tampilkanDosen(): Metode untuk menampilkan informasi dosen dalam bentuk string.
 ### Program dan output
 ![js1_tugas](https://github.com/user-attachments/assets/4e71a851-7095-4c04-9fa2-be72876ff3a2)
 ![output_tugas](https://github.com/user-attachments/assets/22717e9e-332c-4855-b388-586e467dd4cd)
