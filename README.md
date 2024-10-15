@@ -66,7 +66,6 @@ menampilkan informasi tersebut.
 pembuatan kelas, penggunaan metode, dan hasil output
 Kelas adalah blueprint atau rancangan untuk membuat objek. Kelas menggabungkan properti
 (atribut) dan metode (fungsi) yang mewakili perilaku dan keadaan dari suatu objek.
-### Penjelasan pembuatan kelas dan penggunaan metode
 ### Deskripsi
 Script ini adalah contoh sederhana yang menggunakan OOP (Object-Oriented Programming) di PHP
 untuk mengelola data dosen. Script ini dapat menampilkan informasi dosen termasuk nama, NIP,
@@ -94,7 +93,7 @@ Kode ini terdiri dari kelas Dosen yang memiliki atribut dan metode sebagai berik
 
 ## Jobsheet 2
 ### Instruksi Kerja
-1. Membuat Class dan Object
+### 1. Membuat Class dan Object
 - Buat class Mahasiswa yang memiliki atribut nama, nim, dan jurusan.
 - Buat metode tampilkanData() dalam class Mahasiswa.
 - Instansiasi objek dari class Mahasiswa dan tampilkan data mahasiswa tersebut.
@@ -125,7 +124,7 @@ Script ini terdiri dari kelas Mahasiswa yang memiliki atribut dan metode berikut
 ![class   object_js2](https://github.com/user-attachments/assets/e7e207b0-2678-4c3d-8335-2ac969771e62)
 ![output1_ikjs2](https://github.com/user-attachments/assets/72b798ba-7cc0-456d-a84e-903b4906ac9b)
 
-3. Encapsulation
+### 2. Encapsulation
 - Ubah atribut dalam class Mahasiswa menjadi private.
 - Buat metode getter dan setter untuk atribut nama, nim, dan jurusan.
 - Demonstrasikan akses ke atribut menggunakan metode getter dan setter.
@@ -168,7 +167,7 @@ metode untuk menampilkan data mahasiswa:
 ![encap_js2](https://github.com/user-attachments/assets/4be17a1d-ba23-4f10-a4c9-7c556860fedf)
 ![output2_ikjs2](https://github.com/user-attachments/assets/90a23720-064a-4f13-98a3-42c903e44f07)
 
-4. Inheritance
+### 3. Inheritance
 - Buat class Pengguna dengan atribut nama dan metode getNama().
 - Buat class Dosen yang mewarisi class Pengguna dan tambahkan atribut
 mataKuliah.
@@ -204,7 +203,7 @@ Script ini menggunakan dua kelas:
 ![inheri_js2](https://github.com/user-attachments/assets/05292697-6c1c-40cb-9fc6-85e8ab85d314)
 ![output3_ikjs2](https://github.com/user-attachments/assets/ed8d3e82-a55f-4cc9-9b66-6f24837a2eba)
 
-5. Polymorphism
+### 4. Polymorphism
 - Buat class Pengguna dengan metode aksesFitur().
 - Implementasikan aksesFitur() dengan cara berbeda di class Dosen dan
 Mahasiswa.
@@ -257,7 +256,7 @@ echo $dosen1->tampilkanDosen();
 ![poly_js2](https://github.com/user-attachments/assets/6d40af7e-aab5-45e9-9aaf-54c1b31f5ebd)
 ![output4_ikjs2](https://github.com/user-attachments/assets/ee851c44-802b-4638-a289-ed670c7eeaa9)
 
-6. Abstraction
+### 5. Abstraction
 - Buat class abstrak Pengguna dengan metode abstrak aksesFitur().
 - Implementasikan class Mahasiswa dan Dosen yang mengimplementasikan
 metode abstrak tersebut.
@@ -308,7 +307,7 @@ penggunaan: echo $mahasiswa1->aksesFitur();
 
 ## Jobsheet 3
 ### Instruksi kerja
-1. Inheritance
+### 1. Inheritance
 - Buat kelas Person dengan atribut name dan metode getName().
 - Buat kelas Student yang mewarisi dari Person dan tambahkan atribut studentID
 serta metode getStudentID().
@@ -336,7 +335,7 @@ Memanggil konstruktor kelas induk untuk mengatur nama.
 ![inheri_js3](https://github.com/user-attachments/assets/6774c43e-2522-4d44-b1e6-5dec1024af36)
 ![output1_ikjs3](https://github.com/user-attachments/assets/3fd19a88-ed4b-47c3-9623-f67e14c99827)
 
-2. Polymorphism
+### 2. Polymorphism
 - Buat kelas Teacher yang juga mewarisi dari Person dan tambahkan atribut
 teacherID.
 - Override metode getName() di kelas Student dan Teacher untuk menampilkan
@@ -374,11 +373,90 @@ Memanggil konstruktor kelas induk untuk mengatur nama.
 ![poly_js3](https://github.com/user-attachments/assets/efd943f1-4030-4166-a3e1-8bd309d178d9)
 ![output2_ikjs3](https://github.com/user-attachments/assets/3b447294-3f83-417a-a8a3-c966003491c8)
 
-3. Encapsulation
+### 3. Encapsulation
 - Ubah atribut name dan studentID dalam kelas Student menjadi private.
 - Tambahkan metode setter dan getter untuk mengakses dan mengubah nilai
 atribut name dan studentID.
-4. Abstraction
+### Deskripsi
+Script ini adalah contoh implementasi pewarisan dalam Object-Oriented Programming (OOP)
+menggunakan PHP. Terdapat dua kelas: Person sebagai kelas dasar dan Student sebagai kelas
+turunan. Kelas Person menyimpan informasi dasar seperti nama, sementara kelas Student
+menyimpan informasi tambahan seperti ID siswa. Script ini juga menunjukkan cara mengubah nilai
+atribut menggunakan metode setter.
+
+### Struktur Kode
+1. Kelas Person:
+- Atribut:
+- $name: Menyimpan nama seseorang, dengan akses private untuk menjaga enkapsulasi.
+- Metode:
+- __construct($name): Konstruktor untuk menginisialisasi nama ketika objek Person dibuat.
+- getName(): Mengembalikan nama yang disimpan di properti $name.
+- setName($name): Mengatur nilai baru untuk nama.
+2. Kelas Student (Turunan dari kelas Person):
+- Atribut:
+- $studentID: Menyimpan ID siswa, dengan akses private.
+- Metode:
+- __construct($name, $studentID): Konstruktor untuk menginisialisasi nama dan ID siswa,
+memanggil konstruktor kelas induk untuk mengatur nama.
+- getStudentID(): Mengembalikan ID siswa yang disimpan di properti $studentID.
+- setStudentID($studentID): Mengatur nilai baru untuk ID siswa.
+- $student = new Student("Hana", "123456") : Instansiasi objek Student.
+- echo "Updated Name: " . $student->getName(): Menampilkan Nama Siswa yang telah di ubah
+- echo "Updated StudentID: " . $student->getStudentID() : Menampilkan ID Siswa yang telah di ubah
+
+### Script program dan output
+![poly_js3](https://github.com/user-attachments/assets/dc367169-f22b-454e-903c-ed9eab9fcb58)
+![output3_ikjs3](https://github.com/user-attachments/assets/dc2cde37-5d66-4d75-ba0b-08d8a7a0811d)
+
+### 4. Abstraction
 - Buat kelas abstrak Course dengan metode abstrak getCourseDetails().
 - Buat kelas OnlineCourse dan OfflineCourse yang mengimplementasikan
 getCourseDetails() untuk memberikan detail yang berbeda.
+
+### Deskripsi
+Script ini merupakan contoh implementasi konsep kelas abstrak dan pewarisan dalam Object
+Oriented Programming (OOP) menggunakan PHP. Terdapat kelas abstrak Course yang dikhususkan
+untuk mendefinisikan struktur umum kursus, serta dua kelas turunan: OnlineCourse dan
+OfflineCourse, yang masing-masing menangani kursus dengan cara yang berbeda.
+
+### Struktur Kode
+1. Kelas Abstrak Course:
+- Atribut:
+- $namaKursus: Menyimpan nama kursus.
+- Metode:
+- __construct($namaKursus): Konstruktor untuk menginisialisasi nama kursus.
+- getCourseDetails(): Metode abstrak yang harus diimplementasikan oleh kelas turunan.
+2. Kelas OnlineCourse (Turunan dari kelas Course):
+- Atribut:
+- $platform: Menyimpan platform tempat kursus online diselenggarakan.
+- Metode:
+- __construct($namaKursus, $platform): Konstruktor untuk menginisialisasi nama kursus dan
+platform.
+- $onlineCourse = new OnlineCourse("Pemrograman Web", "Zoom") : Instansiasi objek onlineCourse
+- echo $onlineCourse->getCourseDetails() : Mengembalikan string yang berisi detail kursus
+online.
+3. Kelas OfflineCourse (Turunan dari kelas Course):
+- Atribut:
+- $lokasi: Menyimpan lokasi kursus offline.
+- Metode:
+- __construct($namaKursus, $lokasi): Konstruktor untuk menginisialisasi nama kursus dan lokasi.
+- $offlineCourse = new OfflineCourse("Desain Grafis", "Gedung C"): Instansiasi objek
+offlineCourse
+- echo $offlineCourse->getCourseDetails(): Mengembalikan string yang berisi detail kursus
+offline.
+### Script program dan output
+![abstract_js3](https://github.com/user-attachments/assets/60a14699-c5aa-4049-920d-f57e343eb450)
+![output4_ikjs3](https://github.com/user-attachments/assets/545ae1dc-d4c1-4648-bd87-11961810e4b4)
+## Tugas
+1. Implementasikan kelas Person sebagai induk dari Dosen dan Mahasiswa.
+2. Gunakan konsep Inheritance untuk membuat hierarki kelas yang memungkinkan
+Dosen dan Mahasiswa memiliki atribut dan metode yang sesuai dengan perannya.
+3. Terapkan Polymorphism dengan membuat metode getRole() di kelas Person dan
+override metode ini di kelas Dosen dan Mahasiswa untuk menampilkan peran yang
+berbeda.
+4. Gunakan Encapsulation untuk melindungi atribut nidn di kelas Dosen dan nim di
+kelas Mahasiswa.
+5. Buat kelas abstrak Jurnal dan implementasikan konsep Abstraction dengan
+membuat kelas turunan JurnalDosen dan JurnalMahasiswa yang masing-masing
+memiliki cara tersendiri untuk mengelola pengajuan jurnal.
+
