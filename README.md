@@ -89,7 +89,7 @@ Kode ini terdiri dari kelas Dosen yang memiliki atribut dan metode sebagai berik
 
 ## Jobsheet 2
 ### Instruksi Kerja
-### 1. Membuat Class dan Object
+#### 1. Membuat Class dan Object
 - Buat class Mahasiswa yang memiliki atribut nama, nim, dan jurusan.
 - Buat metode tampilkanData() dalam class Mahasiswa.
 - Instansiasi objek dari class Mahasiswa dan tampilkan data mahasiswa tersebut.
@@ -117,7 +117,7 @@ Script ini terdiri dari kelas Mahasiswa yang memiliki atribut dan metode berikut
 ![class   object_js2](https://github.com/user-attachments/assets/e7e207b0-2678-4c3d-8335-2ac969771e62)
 ![output1_ikjs2](https://github.com/user-attachments/assets/72b798ba-7cc0-456d-a84e-903b4906ac9b)
 
-### 2. Encapsulation
+#### 2. Encapsulation
 - Ubah atribut dalam class Mahasiswa menjadi private.
 - Buat metode getter dan setter untuk atribut nama, nim, dan jurusan.
 - Demonstrasikan akses ke atribut menggunakan metode getter dan setter.
@@ -158,7 +158,7 @@ metode untuk menampilkan data mahasiswa:
 ![encap_js2](https://github.com/user-attachments/assets/4be17a1d-ba23-4f10-a4c9-7c556860fedf)
 ![output2_ikjs2](https://github.com/user-attachments/assets/90a23720-064a-4f13-98a3-42c903e44f07)
 
-### 3. Inheritance
+#### 3. Inheritance
 - Buat class Pengguna dengan atribut nama dan metode getNama().
 - Buat class Dosen yang mewarisi class Pengguna dan tambahkan atribut
 mataKuliah.
@@ -192,7 +192,7 @@ Script ini menggunakan dua kelas:
 ![inheri_js2](https://github.com/user-attachments/assets/05292697-6c1c-40cb-9fc6-85e8ab85d314)
 ![output3_ikjs2](https://github.com/user-attachments/assets/ed8d3e82-a55f-4cc9-9b66-6f24837a2eba)
 
-### 4. Polymorphism
+#### 4. Polymorphism
 - Buat class Pengguna dengan metode aksesFitur().
 - Implementasikan aksesFitur() dengan cara berbeda di class Dosen dan
 Mahasiswa.
@@ -244,7 +244,7 @@ echo $dosen1->tampilkanDosen();
 ![poly_js2](https://github.com/user-attachments/assets/6d40af7e-aab5-45e9-9aaf-54c1b31f5ebd)
 ![output4_ikjs2](https://github.com/user-attachments/assets/ee851c44-802b-4638-a289-ed670c7eeaa9)
 
-### 5. Abstraction
+#### 5. Abstraction
 - Buat class abstrak Pengguna dengan metode abstrak aksesFitur().
 - Implementasikan class Mahasiswa dan Dosen yang mengimplementasikan
 metode abstrak tersebut.
@@ -296,7 +296,7 @@ penggunaan: echo $mahasiswa1->aksesFitur();
 
 ## Jobsheet 3
 ### Instruksi kerja
-### 1. Inheritance
+#### 1. Inheritance
 - Buat kelas Person dengan atribut name dan metode getName().
 - Buat kelas Student yang mewarisi dari Person dan tambahkan atribut studentID
 serta metode getStudentID().
@@ -323,7 +323,7 @@ Memanggil konstruktor kelas induk untuk mengatur nama.
 ![inheri_js3](https://github.com/user-attachments/assets/6774c43e-2522-4d44-b1e6-5dec1024af36)
 ![output1_ikjs3](https://github.com/user-attachments/assets/3fd19a88-ed4b-47c3-9623-f67e14c99827)
 
-### 2. Polymorphism
+#### 2. Polymorphism
 - Buat kelas Teacher yang juga mewarisi dari Person dan tambahkan atribut
 teacherID.
 - Override metode getName() di kelas Student dan Teacher untuk menampilkan
@@ -360,7 +360,7 @@ Memanggil konstruktor kelas induk untuk mengatur nama.
 ![poly_js3](https://github.com/user-attachments/assets/efd943f1-4030-4166-a3e1-8bd309d178d9)
 ![output2_ikjs3](https://github.com/user-attachments/assets/3b447294-3f83-417a-a8a3-c966003491c8)
 
-### 3. Encapsulation
+#### 3. Encapsulation
 - Ubah atribut name dan studentID dalam kelas Student menjadi private.
 - Tambahkan metode setter dan getter untuk mengakses dan mengubah nilai
 atribut name dan studentID.
@@ -393,7 +393,7 @@ memanggil konstruktor kelas induk untuk mengatur nama.
 ![poly_js3](https://github.com/user-attachments/assets/dc367169-f22b-454e-903c-ed9eab9fcb58)
 ![output3_ikjs3](https://github.com/user-attachments/assets/dc2cde37-5d66-4d75-ba0b-08d8a7a0811d)
 
-### 4. Abstraction
+#### 4. Abstraction
 - Buat kelas abstrak Course dengan metode abstrak getCourseDetails().
 - Buat kelas OnlineCourse dan OfflineCourse yang mengimplementasikan
 getCourseDetails() untuk memberikan detail yang berbeda.
