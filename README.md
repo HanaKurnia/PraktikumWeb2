@@ -48,22 +48,25 @@ Kelas adalah blueprint atau rancangan untuk membuat objek. Kelas menggabungkan p
 o Buat class Mahasiswa yang memiliki atribut nama, nim, dan jurusan.
 o Buat metode tampilkanData() dalam class Mahasiswa.
 o Instansiasi objek dari class Mahasiswa dan tampilkan data mahasiswa tersebut.
-2. Encapsulation
+# Script program
+![class   object_js2](https://github.com/user-attachments/assets/e7e207b0-2678-4c3d-8335-2ac969771e62)
+
+3. Encapsulation
 o Ubah atribut dalam class Mahasiswa menjadi private.
 o Buat metode getter dan setter untuk atribut nama, nim, dan jurusan.
 o Demonstrasikan akses ke atribut menggunakan metode getter dan setter.
-3. Inheritance
+4. Inheritance
 o Buat class Pengguna dengan atribut nama dan metode getNama().
 o Buat class Dosen yang mewarisi class Pengguna dan tambahkan atribut
 mataKuliah.
 o Instansiasi objek dari class Dosen dan tampilkan data dosen.
-4. Polymorphism
+5. Polymorphism
 o Buat class Pengguna dengan metode aksesFitur().
 o Implementasikan aksesFitur() dengan cara berbeda di class Dosen dan
 Mahasiswa.
 o Instansiasi objek dari class Dosen dan Mahasiswa, lalu panggil metode
 aksesFitur().
-5. Abstraction
+6. Abstraction
 o Buat class abstrak Pengguna dengan metode abstrak aksesFitur().
 o Implementasikan class Mahasiswa dan Dosen yang mengimplementasikan
 metode abstrak tersebut.
