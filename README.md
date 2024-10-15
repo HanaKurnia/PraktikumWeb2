@@ -54,7 +54,8 @@ Kode terdiri dari kelas Mahasiswa dengan beberapa atribut dan metode:
 
 ### Script program dan output
 ![instruksi_js1](https://github.com/user-attachments/assets/6cfa0e1c-454f-44d3-894b-ce9ca3918419)
-![instruksi_js1](https://github.com/user-attachments/assets/608fa921-9c2a-41ba-ac42-7b3bccb86161)
+![output_instruksi](https://github.com/user-attachments/assets/1079b799-089c-4553-b088-57008d5034c6)
+
 
 ### Tugas 
 1. Implementasikan kelas Dosen dengan atribut nama, nip, dan mataKuliah.
@@ -238,7 +239,7 @@ data pribadi, yaitu tampilkanDosen() dan tampilkanMahasiswa().
 - getMataKuliah(): Mengembalikan nilai dari atribut mataKuliah.
 - aksesFitur(): Meng-override metode dari kelas induk untuk menunjukkan bahwa dosen memiliki
 akses ke materi dan penilaian. Cara penggunaan echo $dosen1->aksesFitur();
-- Instansiasi Objek Dosen : $dosen1 = new Dosen("Andi", "Alpro");
+- $dosen1 = new Dosen("Andi", "Alpro") : Instansiasi Objek Dosen
 - tampilkanDosen(): Menampilkan nama dosen dan mata kuliah yang diajar. Cara penggunaan echo
 $dosen1->tampilkanDosen();
 3. Kelas Mahasiswa (Turunan dari kelas Pengguna):
@@ -248,7 +249,7 @@ $dosen1->tampilkanDosen();
 - __construct($nama, $jurusan): Constructor untuk menginisialisasi nama dan jurusan.
 - aksesFitur(): Meng-override metode dari kelas induk untuk menunjukkan bahwa mahasiswa
 memiliki akses ke materi dan tugas. Cara penggunaan: echo $mahasiswa1->aksesFitur();
-- Instansiasi Objek Mahasiswa: $mahasiswa1 = new Mahasiswa("Hani", "Teknik Mesin");
+- $mahasiswa1 = new Mahasiswa("Hani", "Teknik Mesin") : Instansiasi Objek Mahasiswa
 - tampilkanMahasiswa(): Menampilkan nama mahasiswa dan jurusan. Cara penggunaan:
 echo $dosen1->tampilkanDosen();
 
@@ -262,3 +263,122 @@ echo $dosen1->tampilkanDosen();
 metode abstrak tersebut.
 - Demonstrasikan dengan memanggil metode aksesFitur() dari objek yang
 diinstansiasi.
+### Deskripsi
+Script ini merupakan implementasi dari konsep kelas abstrak dan polimorfisme dalam OOP (Object
+Oriented Programming) menggunakan PHP. Kelas abstrak Pengguna berfungsi sebagai kelas induk
+untuk kelas Dosen dan Mahasiswa. Script ini memperlihatkan bagaimana kelas turunan (Dosen dan
+Mahasiswa) mengimplementasikan metode abstrak aksesFitur() yang dideklarasikan di kelas
+Pengguna.
+
+### Fitur
+- Kelas Abstrak: Kelas Pengguna adalah kelas abstrak yang tidak dapat diinstansiasi, tetapi menyediakan struktur dasar bagi kelas turunannya.
+- Polimorfisme: Kelas Dosen dan Mahasiswa mengimplementasikan metode aksesFitur() dengan fungsi yang berbeda, sesuai dengan peran masing-masing.
+- Tampilkan Data: Kelas Dosen dan Mahasiswa masing-masing memiliki metode untuk menampilkan data pribadi, yaitu tampilkanDosen() dan tampilkanMahasiswa().
+### Struktur Kode
+1. Kelas Abstrak Pengguna:
+- Atribut:
+- $nama: Menyimpan nama pengguna.
+- Metode:
+- __construct($nama): Constructor untuk menginisialisasi nama pengguna.
+- getNama(): Mengembalikan nilai dari atribut nama.
+- aksesFitur(): Metode abstrak yang harus diimplementasikan oleh kelas turunan.
+2. Kelas Dosen (Turunan dari kelas Pengguna):
+- Atribut:
+- $mataKuliah: Menyimpan mata kuliah yang diajarkan oleh dosen.
+- Metode:
+- __construct($nama, $mataKuliah): Constructor untuk menginisialisasi nama dan mata kuliah.
+- getMataKuliah(): Mengembalikan nilai dari atribut mataKuliah.
+- aksesFitur(): Implementasi metode abstrak untuk memberikan akses khusus dosen. Cara
+penggunaan: echo $dosen1->aksesFitur();
+- $dosen1 = new Dosen("Andi", "Alpro") : Instansiasi Objek Dosen
+- tampilkanDosen(): Menampilkan nama dosen dan mata kuliah yang diajar. Cara penggunaan: echo
+$dosen1->tampilkanDosen();
+3. Kelas Mahasiswa (Turunan dari kelas Pengguna):
+- Atribut:
+- $jurusan: Menyimpan jurusan mahasiswa.
+- Metode:
+- __construct($nama, $jurusan): Constructor untuk menginisialisasi nama dan jurusan.
+- aksesFitur(): Implementasi metode abstrak untuk memberikan akses khusus mahasiswa. Cara
+penggunaan: echo $mahasiswa1->aksesFitur();
+- $mahasiswa1 = new Mahasiswa("Hani", "Teknik Mesin") : Instansiasi objek Mahasiswa.
+- tampilkanMahasiswa(): Menampilkan nama mahasiswa dan jurusan. Cara penggunaan: echo $mahasiswa1->tampilkanMahasiswa();
+### Script program dan output
+![abstract_js2](https://github.com/user-attachments/assets/6745285d-ef87-4ed5-8efa-60a8a8b50b9d)
+![output5_ikjs2](https://github.com/user-attachments/assets/1c075b16-697a-4aea-8a32-d61f808ef4bf)
+
+## Jobsheet 3
+### Instruksi kerja
+1. Inheritance
+- Buat kelas Person dengan atribut name dan metode getName().
+- Buat kelas Student yang mewarisi dari Person dan tambahkan atribut studentID
+serta metode getStudentID().
+### Deskripsi
+Script ini adalah contoh implementasi dasar dari konsep pewarisan dalam Object-Oriented
+Programming (OOP) menggunakan PHP. Dalam script ini, terdapat dua kelas: Person sebagai kelas
+dasar dan Student sebagai kelas turunan yang mewarisi sifat dari kelas Person. Kelas Student
+menambahkan atribut tambahan untuk menyimpan ID siswa.
+
+### Struktur Kode
+1. Kelas Person:
+- Atribut:
+- $name: Menyimpan nama seseorang.
+- Metode:
+- __construct($name): Konstruktor untuk menginisialisasi nama ketika objek Person dibuat.
+- getName(): Mengembalikan nama yang disimpan di properti $name.
+2. Kelas Student (Turunan dari kelas Person):
+- Atribut:
+- $studentID: Menyimpan ID siswa.
+- Metode:
+- __construct($name, $studentID): Konstruktor untuk menginisialisasi nama dan ID siswa.
+Memanggil konstruktor kelas induk untuk mengatur nama.
+- getStudentID(): Mengembalikan ID siswa yang disimpan di properti $studentID.
+### Script program dan output
+![inheri_js3](https://github.com/user-attachments/assets/6774c43e-2522-4d44-b1e6-5dec1024af36)
+![output1_ikjs3](https://github.com/user-attachments/assets/3fd19a88-ed4b-47c3-9623-f67e14c99827)
+
+2. Polymorphism
+- Buat kelas Teacher yang juga mewarisi dari Person dan tambahkan atribut
+teacherID.
+- Override metode getName() di kelas Student dan Teacher untuk menampilkan
+format berbeda.
+### Deskripsi
+Script ini adalah contoh implementasi pewarisan dalam Object-Oriented Programming (OOP)
+menggunakan PHP. Terdapat tiga kelas: Person sebagai kelas dasar, Student sebagai kelas
+turunan untuk siswa, dan Teacher sebagai kelas turunan untuk guru. Setiap kelas memiliki
+konstruktor untuk menginisialisasi atribut dan metode untuk mengakses informasi yang relevan.
+
+### Struktur Kode
+1. Kelas Person:
+- Atribut:
+- $name: Menyimpan nama seseorang.
+- Metode:
+- __construct($name): Konstruktor untuk menginisialisasi nama ketika objek Person dibuat.
+- getName(): Mengembalikan nama yang disimpan di properti $name.
+2. Kelas Student (Turunan dari kelas Person):
+- Atribut:
+- $studentID: Menyimpan ID siswa.
+- Metode:
+- __construct($name, $studentID): Konstruktor untuk menginisialisasi nama dan ID siswa.
+Memanggil konstruktor kelas induk untuk mengatur nama.
+- getName(): Mengoverride metode dari kelas induk untuk menampilkan nama dan ID siswa.
+- getStudentID(): Mengembalikan ID siswa yang disimpan di properti $studentID.
+3. Kelas Teacher (Turunan dari kelas Person):
+- Atribut:
+- $teacherID: Menyimpan ID guru.
+- Metode:
+- __construct($name, $teacherID): Konstruktor untuk menginisialisasi nama dan ID guru.
+Memanggil konstruktor kelas induk untuk mengatur nama.
+- getName(): Mengoverride metode dari kelas induk untuk menampilkan nama dan ID guru.
+- getTeacherID(): Mengembalikan ID guru yang disimpan di properti $teacherID.
+### Script program dan output
+![poly_js3](https://github.com/user-attachments/assets/efd943f1-4030-4166-a3e1-8bd309d178d9)
+![output2_ikjs3](https://github.com/user-attachments/assets/3b447294-3f83-417a-a8a3-c966003491c8)
+
+3. Encapsulation
+- Ubah atribut name dan studentID dalam kelas Student menjadi private.
+- Tambahkan metode setter dan getter untuk mengakses dan mengubah nilai
+atribut name dan studentID.
+4. Abstraction
+- Buat kelas abstrak Course dengan metode abstrak getCourseDetails().
+- Buat kelas OnlineCourse dan OfflineCourse yang mengimplementasikan
+getCourseDetails() untuk memberikan detail yang berbeda.
