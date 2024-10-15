@@ -29,7 +29,7 @@ tampilkanData().
 menampilkan informasi tersebut.
 4. Buat dokumentasi proyek dan unggah ke repository GitHub, menjelaskan proses
 pembuatan kelas, penggunaan metode, dan hasil output
-> Kelas adalah blueprint atau rancangan untuk membuat objek. Kelas menggabungkan properti (atribut) dan metode (fungsi) yang mewakili perilaku dan keadaan dari suatu objek.
+Kelas adalah blueprint atau rancangan untuk membuat objek. Kelas menggabungkan properti (atribut) dan metode (fungsi) yang mewakili perilaku dan keadaan dari suatu objek.
 # Penjelasan pembuatan kelas dan penggunaan metode
 > class Dosen : Mendefinisikan sebuah kelas dengan nama Dosen.
 > Atribut atau properti : $nama, $nip, $mataKuliah adalah variabel yang mewakili karakteristik dari kelas. Pada tugas ini, atribut dideklarasikan sebagai public, artinya atribut tersebut dapat diakses di mana saja, baik di dalam kelas, dari luar kelas, maupun oleh kelas turunan.
@@ -42,4 +42,30 @@ pembuatan kelas, penggunaan metode, dan hasil output
 ![js1_tugas](https://github.com/user-attachments/assets/4e71a851-7095-4c04-9fa2-be72876ff3a2)
 ![output_tugas](https://github.com/user-attachments/assets/22717e9e-332c-4855-b388-586e467dd4cd)
 
-
+# Jobsheet 2
+# Instruksi Kerja
+1. Membuat Class dan Object
+o Buat class Mahasiswa yang memiliki atribut nama, nim, dan jurusan.
+o Buat metode tampilkanData() dalam class Mahasiswa.
+o Instansiasi objek dari class Mahasiswa dan tampilkan data mahasiswa tersebut.
+2. Encapsulation
+o Ubah atribut dalam class Mahasiswa menjadi private.
+o Buat metode getter dan setter untuk atribut nama, nim, dan jurusan.
+o Demonstrasikan akses ke atribut menggunakan metode getter dan setter.
+3. Inheritance
+o Buat class Pengguna dengan atribut nama dan metode getNama().
+o Buat class Dosen yang mewarisi class Pengguna dan tambahkan atribut
+mataKuliah.
+o Instansiasi objek dari class Dosen dan tampilkan data dosen.
+4. Polymorphism
+o Buat class Pengguna dengan metode aksesFitur().
+o Implementasikan aksesFitur() dengan cara berbeda di class Dosen dan
+Mahasiswa.
+o Instansiasi objek dari class Dosen dan Mahasiswa, lalu panggil metode
+aksesFitur().
+5. Abstraction
+o Buat class abstrak Pengguna dengan metode abstrak aksesFitur().
+o Implementasikan class Mahasiswa dan Dosen yang mengimplementasikan
+metode abstrak tersebut.
+o Demonstrasikan dengan memanggil metode aksesFitur() dari objek yang
+diinstansiasi.
