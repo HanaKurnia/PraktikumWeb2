@@ -21,9 +21,7 @@ perubahan jurusan.
 tampilkanData().
 
 ### Deskripsi
-Script ini merupakan contoh sederhana untuk mengelola data mahasiswa menggunakan OOP (Object
-Oriented Programming) dalam PHP. Script ini menampilkan data mahasiswa dan memperbarui
-informasi jurusan serta NIM mahasiswa.
+Script ini menampilkan data mahasiswa dan memperbarui informasi jurusan serta NIM mahasiswa.
 
 ### Fitur
 - Instansiasi Objek: Membuat objek mahasiswa dengan atribut nama, nim, dan jurusan.
@@ -67,9 +65,7 @@ pembuatan kelas, penggunaan metode, dan hasil output
 Kelas adalah blueprint atau rancangan untuk membuat objek. Kelas menggabungkan properti
 (atribut) dan metode (fungsi) yang mewakili perilaku dan keadaan dari suatu objek.
 ### Deskripsi
-Script ini adalah contoh sederhana yang menggunakan OOP (Object-Oriented Programming) di PHP
-untuk mengelola data dosen. Script ini dapat menampilkan informasi dosen termasuk nama, NIP,
-dan mata kuliah yang diajar.
+Script ini dapat menampilkan informasi dosen termasuk nama, NIP, dan mata kuliah yang diajar.
 
 ### Fitur
 - Instansiasi Objek: Membuat objek dosen dengan atribut nama, nip, dan matakuliah.
@@ -97,11 +93,8 @@ Kode ini terdiri dari kelas Dosen yang memiliki atribut dan metode sebagai berik
 - Buat class Mahasiswa yang memiliki atribut nama, nim, dan jurusan.
 - Buat metode tampilkanData() dalam class Mahasiswa.
 - Instansiasi objek dari class Mahasiswa dan tampilkan data mahasiswa tersebut.
-### Penjelasan
 ### Deskripsi
-Script ini adalah contoh sederhana dari penggunaan OOP (Object-Oriented Programming) dalam PHP
-untuk mengelola data mahasiswa. Script ini dapat digunakan untuk menampilkan data mahasiswa,
-seperti nama, NIM, dan jurusan.
+Script ini dapat digunakan untuk menampilkan data mahasiswa, seperti nama, NIM, dan jurusan.
 
 ### Fitur
 - Instansiasi Objek: Membuat objek mahasiswa dengan atribut nama, nim, dan jurusan.
@@ -129,10 +122,8 @@ Script ini terdiri dari kelas Mahasiswa yang memiliki atribut dan metode berikut
 - Buat metode getter dan setter untuk atribut nama, nim, dan jurusan.
 - Demonstrasikan akses ke atribut menggunakan metode getter dan setter.
 ### Deskripsi
-Script ini merupakan contoh implementasi OOP (Object-Oriented Programming) dalam PHP untuk
-mengelola data mahasiswa menggunakan metode setter dan getter. Metode ini digunakan untuk
-mengisi dan mengambil nilai properti dari objek secara aman. Script ini menampilkan data
-mahasiswa, seperti nama, NIM, dan jurusan.
+Metode ini digunakan untuk mengisi dan mengambil nilai properti dari objek secara aman. Script
+ini menampilkan data mahasiswa, seperti nama, NIM, dan jurusan.
 
 ### Fitur
 - Setter dan Getter: Menggunakan metode setter untuk mengisi nilai atribut, dan getter untuk
@@ -173,11 +164,9 @@ metode untuk menampilkan data mahasiswa:
 mataKuliah.
 - Instansiasi objek dari class Dosen dan tampilkan data dosen.
 ### Deskripsi
-Script ini adalah implementasi sederhana dari konsep inheritance (pewarisan) dalam OOP (Object
-Oriented Programming) menggunakan PHP. Dalam script ini, terdapat kelas Pengguna sebagai kelas
-induk dan kelas Dosen sebagai kelas turunan. Kelas Dosen mewarisi atribut dan metode dari
-kelas Pengguna, serta menambahkan atribut dan metode tambahan untuk menangani data dosen,
-seperti mata kuliah.
+Dalam script ini, terdapat kelas Pengguna sebagai kelas induk dan kelas Dosen sebagai kelas
+turunan. Kelas Dosen mewarisi atribut dan metode dari kelas Pengguna, serta menambahkan
+atribut dan metode tambahan untuk menangani data dosen, seperti mata kuliah.
 
 ### Fitur
 - Inheritance: Kelas Dosen mewarisi atribut nama dari kelas Pengguna.
@@ -210,11 +199,10 @@ Mahasiswa.
 - Instansiasi objek dari class Dosen dan Mahasiswa, lalu panggil metode
 aksesFitur().
 ### Deskripsi
-Script ini merupakan implementasi dari konsep inheritance (pewarisan) dan method overriding
-dalam OOP (Object-Oriented Programming) menggunakan PHP. Terdapat tiga kelas: Pengguna sebagai
-kelas induk, serta Dosen dan Mahasiswa sebagai kelas turunannya. Script ini memperlihatkan
-bagaimana kelas turunan dapat mewarisi atribut dan metode dari kelas induk serta meng-override
-metode tertentu untuk memberikan fungsi khusus.
+Script ini terdapat tiga kelas: Pengguna sebagai kelas induk, serta Dosen dan Mahasiswa
+sebagai kelas turunannya. Script ini memperlihatkan bagaimana kelas turunan dapat mewarisi
+atribut dan metode dari kelas induk serta meng-override metode tertentu untuk memberikan
+fungsi khusus.
 
 ### Fitur
 - Inheritance: Kelas Dosen dan Mahasiswa mewarisi atribut nama dan metode dari kelas Pengguna.
@@ -263,16 +251,17 @@ metode abstrak tersebut.
 - Demonstrasikan dengan memanggil metode aksesFitur() dari objek yang
 diinstansiasi.
 ### Deskripsi
-Script ini merupakan implementasi dari konsep kelas abstrak dan polimorfisme dalam OOP (Object
-Oriented Programming) menggunakan PHP. Kelas abstrak Pengguna berfungsi sebagai kelas induk
-untuk kelas Dosen dan Mahasiswa. Script ini memperlihatkan bagaimana kelas turunan (Dosen dan
-Mahasiswa) mengimplementasikan metode abstrak aksesFitur() yang dideklarasikan di kelas
-Pengguna.
+Dalam script ini, kelas abstract Pengguna berfungsi sebagai kelas induk untuk kelas Dosen dan
+Mahasiswa. Script ini memperlihatkan bagaimana kelas turunan (Dosen dan Mahasiswa)
+mengimplementasikan metode abstrak aksesFitur() yang dideklarasikan di kelas Pengguna.
 
 ### Fitur
-- Kelas Abstrak: Kelas Pengguna adalah kelas abstrak yang tidak dapat diinstansiasi, tetapi menyediakan struktur dasar bagi kelas turunannya.
-- Polimorfisme: Kelas Dosen dan Mahasiswa mengimplementasikan metode aksesFitur() dengan fungsi yang berbeda, sesuai dengan peran masing-masing.
-- Tampilkan Data: Kelas Dosen dan Mahasiswa masing-masing memiliki metode untuk menampilkan data pribadi, yaitu tampilkanDosen() dan tampilkanMahasiswa().
+- Kelas Abstrak: Kelas Pengguna adalah kelas abstrak yang tidak dapat diinstansiasi, tetapi
+  menyediakan struktur dasar bagi kelas turunannya.
+- Polimorfisme: Kelas Dosen dan Mahasiswa mengimplementasikan metode aksesFitur() dengan
+  fungsi yang berbeda, sesuai dengan peran masing-masing.
+- Tampilkan Data: Kelas Dosen dan Mahasiswa masing-masing memiliki metode untuk menampilkan
+  data pribadi, yaitu tampilkanDosen() dan tampilkanMahasiswa().
 ### Struktur Kode
 1. Kelas Abstrak Pengguna:
 - Atribut:
@@ -312,10 +301,9 @@ penggunaan: echo $mahasiswa1->aksesFitur();
 - Buat kelas Student yang mewarisi dari Person dan tambahkan atribut studentID
 serta metode getStudentID().
 ### Deskripsi
-Script ini adalah contoh implementasi dasar dari konsep pewarisan dalam Object-Oriented
-Programming (OOP) menggunakan PHP. Dalam script ini, terdapat dua kelas: Person sebagai kelas
-dasar dan Student sebagai kelas turunan yang mewarisi sifat dari kelas Person. Kelas Student
-menambahkan atribut tambahan untuk menyimpan ID siswa.
+Dalam script ini, terdapat dua kelas: Person sebagai kelas dasar dan Student sebagai kelas
+turunan yang mewarisi sifat dari kelas Person. Kelas Student menambahkan atribut tambahan
+untuk menyimpan ID siswa.
 
 ### Struktur Kode
 1. Kelas Person:
@@ -341,10 +329,9 @@ teacherID.
 - Override metode getName() di kelas Student dan Teacher untuk menampilkan
 format berbeda.
 ### Deskripsi
-Script ini adalah contoh implementasi pewarisan dalam Object-Oriented Programming (OOP)
-menggunakan PHP. Terdapat tiga kelas: Person sebagai kelas dasar, Student sebagai kelas
-turunan untuk siswa, dan Teacher sebagai kelas turunan untuk guru. Setiap kelas memiliki
-konstruktor untuk menginisialisasi atribut dan metode untuk mengakses informasi yang relevan.
+Script ini terdapat tiga kelas: Person sebagai kelas dasar, Student sebagai kelas turunan
+untuk siswa, dan Teacher sebagai kelas turunan untuk guru. Setiap kelas memiliki konstruktor
+untuk menginisialisasi atribut dan metode untuk mengakses informasi.
 
 ### Struktur Kode
 1. Kelas Person:
@@ -378,12 +365,10 @@ Memanggil konstruktor kelas induk untuk mengatur nama.
 - Tambahkan metode setter dan getter untuk mengakses dan mengubah nilai
 atribut name dan studentID.
 ### Deskripsi
-Script ini adalah contoh implementasi pewarisan dalam Object-Oriented Programming (OOP)
-menggunakan PHP. Terdapat dua kelas: Person sebagai kelas dasar dan Student sebagai kelas
-turunan. Kelas Person menyimpan informasi dasar seperti nama, sementara kelas Student
-menyimpan informasi tambahan seperti ID siswa. Script ini juga menunjukkan cara mengubah nilai
-atribut menggunakan metode setter.
-
+Script ini terdapat dua kelas: Person sebagai kelas dasar dan Student sebagai kelas turunan.
+Kelas Person menyimpan informasi dasar seperti nama, sementara kelas Student menyimpan
+informasi tambahan seperti ID siswa. Script ini juga menunjukkan cara mengubah nilai atribut
+menggunakan metode setter. 
 ### Struktur Kode
 1. Kelas Person:
 - Atribut:
@@ -414,10 +399,9 @@ memanggil konstruktor kelas induk untuk mengatur nama.
 getCourseDetails() untuk memberikan detail yang berbeda.
 
 ### Deskripsi
-Script ini merupakan contoh implementasi konsep kelas abstrak dan pewarisan dalam Object
-Oriented Programming (OOP) menggunakan PHP. Terdapat kelas abstrak Course yang dikhususkan
-untuk mendefinisikan struktur umum kursus, serta dua kelas turunan: OnlineCourse dan
-OfflineCourse, yang masing-masing menangani kursus dengan cara yang berbeda.
+Script ini terdapat kelas abstrak Course yang dikhususkan untuk mendefinisikan struktur umum
+kursus, serta dua kelas turunan: OnlineCourse dan OfflineCourse, yang masing-masing menangani
+kursus dengan cara yang berbeda.
 
 ### Struktur Kode
 1. Kelas Abstrak Course:
@@ -459,4 +443,66 @@ kelas Mahasiswa.
 5. Buat kelas abstrak Jurnal dan implementasikan konsep Abstraction dengan
 membuat kelas turunan JurnalDosen dan JurnalMahasiswa yang masing-masing
 memiliki cara tersendiri untuk mengelola pengajuan jurnal.
+### Deskripsi
+Script ini adalah penerapan Object-Oriented Programming (OOP) menggunakan PHP, dengan
+fokus pada penggunaan kelas abstrak dan pewarisan. Dalam script ini, terdapat kelas-kelas yang
+mewakili Person, Dosen, Mahasiswa, dan Jurnal. Juga terdapat kelas turunan untuk pengelolaan
+pengajuan jurnal dosen dan mahasiswa.
+
+### Struktur Kode
+1. Kelas Abstrak Person
+- Atribut:
+- protected $name: Menyimpan nama orang.
+- Metode:
+- __construct($name): Konstruktor untuk menginisialisasi nama.
+- getName(): Mengembalikan nama.
+- getRole(): Metode abstrak untuk mendapatkan peran (harus diimplementasikan di kelas turunan).
+2. Kelas Dosen (Turunan dari Person)
+- Atribut:
+- private $nidn: Menyimpan NIDN dosen.
+- Metode:
+- __construct($name, $nidn): Konstruktor untuk menginisialisasi nama dan NIDN.
+- getNidn(): Mengembalikan NIDN.
+- getRole(): Mengembalikan peran sebagai 'Dosen'.
+- Membuat Objek Dosen:
+- $dosen1 = new Dosen("Dr. Andi", "123456789");
+- echo "Nama: " . $dosen1->getName() . "<br>";
+- echo "NIDN: " . $dosen1->getNidn() . "<br>";
+- echo "Peran: " . $dosen1->getRole() . "<br><br>";
+
+3. Kelas Mahasiswa (Turunan dari Person)
+- Atribut:
+- private $nim: Menyimpan NIM mahasiswa.
+- Metode:
+- __construct($name, $nim): Konstruktor untuk menginisialisasi nama dan NIM.
+- getNim(): Mengembalikan NIM.
+- getRole(): Mengembalikan peran sebagai 'Mahasiswa'.
+- Membuat Objek Mahasiswa:
+- $mahasiswa1 = new Mahasiswa("Budi", "987654321");
+- echo "Nama: " . $mahasiswa1->getName() . "<br>";
+- echo "NIM: " . $mahasiswa1->getNim() . "<br>";
+- echo "Peran: " . $mahasiswa1->getRole() . "<br><br>";
+
+4. Kelas Abstrak Jurnal
+- Atribut:
+- protected $title: Menyimpan judul jurnal.
+- Metode:
+- __construct($title): Konstruktor untuk menginisialisasi judul.
+- manageSubmission(): Metode abstrak untuk mengelola pengajuan jurnal (harus diimplementasikan
+di kelas turunan).
+5. Kelas JurnalDosen (Turunan dari Jurnal)
+- Metode:
+- manageSubmission(): Mengembalikan pesan bahwa jurnal dosen berhasil diajukan.
+- Mengelola pengajuan Jurnal Dosen:
+- $jurnalDosen = new JurnalDosen("Pemrograman PHP");
+- echo $jurnalDosen->manageSubmission() . "<br>";
+6. Kelas JurnalMahasiswa (Turunan dari Jurnal)
+- Metode:
+- manageSubmission(): Mengembalikan pesan bahwa jurnal mahasiswa berhasil diajukan.
+- Mengelola pengajuan Jurnal Mahasiswa:
+- $jurnalMahasiswa = new JurnalMahasiswa("Tugas Akhir");
+- echo $jurnalMahasiswa->manageSubmission() . "<br>";
+### Script program dan output
+![tugas_js3](https://github.com/user-attachments/assets/cd792c1b-b85f-4c21-bbac-2533aea2023a)
+![output_tugasjs3](https://github.com/user-attachments/assets/ec2a438c-70d5-48bb-b616-56bfe6cc2d57)
 
