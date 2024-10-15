@@ -1,6 +1,6 @@
 # PraktikumWeb2
-# Jobsheet 1
-# Instruksi Kerja
+## Jobsheet 1
+### Instruksi Kerja
 1. Membuat Class dan Object
 o Buat class Mahasiswa yang memiliki atribut nama, nim, dan jurusan.
 o Buat metode tampilkanData() dalam class Mahasiswa.
