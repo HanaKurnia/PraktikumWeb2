@@ -50,7 +50,11 @@ o Buat metode tampilkanData() dalam class Mahasiswa.
 o Instansiasi objek dari class Mahasiswa dan tampilkan data mahasiswa tersebut.
 # Script program
 ![class   object_js2](https://github.com/user-attachments/assets/e7e207b0-2678-4c3d-8335-2ac969771e62)
-
+# Penjelasan
+class Mahasiswa : Mendefinisikan sebuah kelas dengan nama Mahasiswa.
+public $nama;
+public $nim;
+public $jurusan; merupakan atribut atau properti. Pada tugas ini, atribut dideklarasikan sebagai public, artinya atribut tersebut dapat diakses di mana saja, baik di dalam kelas, dari luar kelas, maupun oleh kelas turunan.
 3. Encapsulation
 o Ubah atribut dalam class Mahasiswa menjadi private.
 o Buat metode getter dan setter untuk atribut nama, nim, dan jurusan.
