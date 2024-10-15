@@ -14,12 +14,12 @@ atribut nama, nim, dan jurusan.
 perubahan jurusan.
 - Gunakan metode ini untuk mengubah jurusan dari objek yang sudah dibuat.
 4. Penggunaan Atribut dan Metode
-o Ubah nilai atribut nim dari objek Mahasiswa menggunakan metode setter.
-o Tampilkan data mahasiswa yang sudah diperbarui dengan memanggil metode
+- Ubah nilai atribut nim dari objek Mahasiswa menggunakan metode setter.
+- Tampilkan data mahasiswa yang sudah diperbarui dengan memanggil metode
 tampilkanData().
 ### Script program dan output
 ![instruksi_js1](https://github.com/user-attachments/assets/6cfa0e1c-454f-44d3-894b-ce9ca3918419)
-![output_instruksi](https://github.com/user-attachments/assets/30398017-5d0d-4642-ab7a-c442004196da)
+![output_instruksi](https://github.com/user-attachments/assets/)
 
 
 ### Tugas 
